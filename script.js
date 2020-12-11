@@ -32,7 +32,7 @@ if(likesDogs) {
 
 let birthYear = 1978
 
-if(birthYear <birthYear >= 1995) {
+if(birthYear >= 1995) {
     console.log('You\'re Gen Z!')
 } else if (birthYear >= 1977){
     console.log('You\'re Gen Y!')
@@ -100,7 +100,7 @@ let weatherForecast = [
      day: "Today",
      temperature: {
        high: 29,
-       low: 32
+       low: 19
      },
      conditions: "sunny",
      astronomy: {
@@ -112,7 +112,7 @@ let weatherForecast = [
      day: "Saturday",
      temperature: {
        high: 30,
-       low: 29
+       low: 12
       },
      conditions: "cloudy",
      astronomy: {
@@ -142,34 +142,14 @@ if (weatherForecast[0].temperature.high < 40 && weatherForecast[1].temperature.h
     console.log('It\'s going to be cold as heck all week!')
 }
 
-//Loops--move this code to another file later
-
-let i = 1
-
-while(i <= 100) {
-    console.log('TWEET TWEET')
-    i++
+for(i = 0; i < weatherForecast.length; i++){
+    if(weatherForecast[i].temperature.low < 20) {
+        console.log(`${weatherForecast[i].day} will be cold as heck!`)
+    }
 }
 
-for(let i = 0; i < 100; i++){
-    console.log('TWEET TWEET TWEET')
-}
-
-//Loops lightning exercise 2
-// Favorite Foods
-// In your JavaScript, create a new variable called favoriteFoods. It should store an array of strings representing five of your favorite foods.
-// Loop through the array and print each food item to the console.
-
-let favoriteFoods = ['cheesecake', 'fajitas', 'grapes', 'anything curried']
-
-i = 0
-
-while(i < favoriteFoods.length){
-    console.log(favoriteFoods[i])
-    i++
-
-}
-
-for(let i = 0; i < favoriteFoods.length; i++) {
-    console.log(favoriteFoods[i])
+for(i = 0; i < weatherForecast.length; i++){
+    if(weatherForecast[i].temperature.high > 95) {
+        console.log(`${weatherForecast[i].day} will be hot as heck!`)
+    }
 }
