@@ -77,22 +77,99 @@ if (time === '7:30am' && isHungry === true) {
 
 // Activity 6 Student Grades
 
-let grade = 96
+let grade = 90
 
-if (grade >= 0 && grade <= 69) { 
+if (grade <= 69) { 
     console.log('You got an F.')
 }
-else if (grade >= 70 && grade <= 76) {
+else if (grade <= 76) {
     console.log('You got a D.')
 } 
-else if (grade >= 77 && grade <= 84) {
+else if (grade <= 84) {
     console.log ('You got a C.')
 }
-else if (grade >= 84 && grade <= 92) {
+else if (grade <= 92) {
     console.log('You got a B.')
 }
-else if (grade >= 93 && grade <= 100) {
+else if (grade  <= 100) {
     console.log('You got an A.')
 }
 // Challenge-- Weather Data from Variables and Data Types
+let weatherForecast = [
+    {
+     day: "Today",
+     temperature: {
+       high: 29,
+       low: 32
+     },
+     conditions: "sunny",
+     astronomy: {
+       sunrise: "7:43 AM",
+       sunset: "5:09 PM"
+     }
+    },
+    {
+     day: "Saturday",
+     temperature: {
+       high: 30,
+       low: 29
+      },
+     conditions: "cloudy",
+     astronomy: {
+       sunrise: "7:44 AM",
+       sunset: "5:08 PM"
+     }
+    },
+    {
+     day: "Sunday",
+     temperature: {
+       high: 37,
+       low: 35
+      },
+     conditions: "chance of rain",
+     astronomy: {
+       sunrise: "7:45 AM",
+       sunset: "5:07 PM"
+     }
+    }
+   ]
+  
+if (weatherForecast[0].temperature.high > 85 && weatherForecast[1].temperature.high > 85 && weatherForecast[2].temperature.high > 85) {
+    console.log('It\'s going to be hot as heck all week!')
+}
 
+if (weatherForecast[0].temperature.high < 40 && weatherForecast[1].temperature.high < 40 && weatherForecast[2].temperature.high < 40) {
+    console.log('It\'s going to be cold as heck all week!')
+}
+
+//Loops--move this code to another file later
+
+let i = 1
+
+while(i <= 100) {
+    console.log('TWEET TWEET')
+    i++
+}
+
+for(let i = 0; i < 100; i++){
+    console.log('TWEET TWEET TWEET')
+}
+
+//Loops lightning exercise 2
+// Favorite Foods
+// In your JavaScript, create a new variable called favoriteFoods. It should store an array of strings representing five of your favorite foods.
+// Loop through the array and print each food item to the console.
+
+let favoriteFoods = ['cheesecake', 'fajitas', 'grapes', 'anything curried']
+
+i = 0
+
+while(i < favoriteFoods.length){
+    console.log(favoriteFoods[i])
+    i++
+
+}
+
+for(let i = 0; i < favoriteFoods.length; i++) {
+    console.log(favoriteFoods[i])
+}
