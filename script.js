@@ -153,3 +153,4 @@ for(i = 0; i < weatherForecast.length; i++){
         console.log(`${weatherForecast[i].day} will be hot as heck!`)
     }
 }
+
